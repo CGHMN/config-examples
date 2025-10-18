@@ -1,0 +1,14 @@
+[NetDev]
+Name=cghmn_wg
+Kind=wireguard
+Description=Compu-Global-Hyper-Mega-Net wireguard
+MTUBytes=1420
+
+[WireGuard]
+ListenPort=51820
+PrivateKeyFile=/etc/systemd/network/cghmn_wg.key
+
+[WireGuardPeer]
+AllowedIPs=172.23.0.0/16,100.89.128.0/22,100.96.0.0/13
+PublicKey=k/QiJIbMakMKgTCHVt8/D+8k4DzRVM6U33F3gMZfRUg=
+Endpoint=wg-admin.cursedsilicon.net:42070
